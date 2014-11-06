@@ -7,8 +7,8 @@
         android:id="@+id/team1name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignBottom="@+id/team2score"
+        android:layout_toRightOf="@+id/team2score"
         android:ems="10" />
 
     <EditText
@@ -29,7 +29,7 @@
         android:text="Start" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/team1score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -49,11 +49,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/team2score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/team1score"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:text="Team 1:"
