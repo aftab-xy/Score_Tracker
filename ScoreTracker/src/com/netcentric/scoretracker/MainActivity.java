@@ -36,10 +36,10 @@ public class MainActivity extends Activity {
 	  
 	        Sport sport_data[] = new Sport[]
 	                {
-	        new Sport(R.drawable.basketball, "Basketball"),
-	        new Sport(R.drawable.soccerball, "Soccer"),
-	        new Sport(R.drawable.volleyball, "Volleyball"),
-	        new Sport(R.drawable.customsport, "Custom Sport")
+	        new Sport(R.drawable.basketball_logo, "Basketball"),
+	        new Sport(R.drawable.volleyball_logo, "Volleyball"),
+	        new Sport(R.drawable.tennis_logo, "Tennis"),
+	        new Sport(R.drawable.pingpong_logo, "Ping Pong")
 	        };
 	    listitem = (ListView)findViewById(R.id.listitem);
 	    SportsAdapter adapter = new SportsAdapter(this, R.layout.list_sports,
@@ -60,8 +60,11 @@ public class MainActivity extends Activity {
               
               
               if(string1.equals("Basketball")){
-              Intent intent = new Intent(context, SetupBasketball.class);
-              startActivity(intent); 
+            	  Intent intent = new Intent(context, SetupBasketball.class);
+            	  startActivity(intent); 
+              }else if(string1.equals("Volleyball")){
+            	  Intent intent = new Intent(context, SetupVolleyball.class);
+            	  startActivity(intent); 
               }
             }
 	    });	 	    

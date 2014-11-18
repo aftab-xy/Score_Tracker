@@ -4,5 +4,7 @@
     <string name="app_name">Score Tracker</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_setup_volleyball">SetupVolleyball</string>
+    <string name="title_activity_volleyball_game">VolleyballGame</string>
 
 </resources>
