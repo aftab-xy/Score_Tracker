@@ -33,7 +33,7 @@
             android:parentActivityName="com.netcentric.scoretracker.MainActivity">
         </activity>
         <activity
-            android:name=".VolleyballGame"
+            android:name=".VolleyballGame_Simple"
             android:screenOrientation="landscape">
         </activity>
     </application>
