@@ -1,4 +1,8 @@
-package com.netcentric.scoretracker;
+package com.netcentric.volleyball;
+
+import com.netcentric.scoretracker.R;
+import com.netcentric.scoretracker.R.id;
+import com.netcentric.scoretracker.R.layout;
 
 import android.app.Activity;
 import android.content.Context;
@@ -42,7 +46,6 @@ public class SetupVolleyball extends Activity {
 		setVolleybtn = (Button) findViewById(R.id.setVolleybtn);
 		team1name = (EditText) findViewById(R.id.team1name);
 		team2name = (EditText) findViewById(R.id.team2name);
-		scoremode = (RadioGroup) findViewById(R.id.scoremode);
 		numset = (RadioGroup) findViewById(R.id.numset);
 		lastset = (RadioGroup) findViewById(R.id.lastset);
 		
@@ -55,10 +58,6 @@ public class SetupVolleyball extends Activity {
 				sTeam1name = team1name.getText().toString();
 				sTeam2name = team2name.getText().toString();
 				
-				radioId = scoremode.getCheckedRadioButtonId();
-				tempBtn = (RadioButton) findViewById(radioId);
-				sScoremode = tempBtn.getText().toString();
-				
 				radioId = lastset.getCheckedRadioButtonId();
 				tempBtn =(RadioButton) findViewById(radioId);
 				nLastset = Integer.parseInt(tempBtn.getText().toString());
@@ -67,11 +66,8 @@ public class SetupVolleyball extends Activity {
 				tempBtn =(RadioButton) findViewById(radioId);
 				nNumset = Integer.parseInt(tempBtn.getText().toString());
 				
-				Intent intent = new Intent(context, VolleyballGame_Simple.class);
+				Intent intent = new Intent(context, VolleyballGame.class);
 				
-				if(sScoremode.equals("detailed")){
-					//intent = new Intent(context, )
-				}
 				intent.putExtra("team1name", sTeam1name);
 				intent.putExtra("team2name", sTeam2name);
 				intent.putExtra("lastset", nLastset);

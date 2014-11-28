@@ -3,14 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="7"
+    android:weightSum="6.5"
     android:background="@drawable/volleyballbg" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:weightSum="10">
+        android:layout_weight="1.5"
+        android:weightSum="9.5"
+        android:layout_marginTop="7dp">
 		
         <Space
             android:layout_width="0dp"
@@ -20,10 +21,10 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/t1setscore"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="0"
@@ -31,27 +32,28 @@
                 android:textSize="20sp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:background="#ff0000"/>
+                android:textColor="#ffffff"
+                android:background="@drawable/matchpointbg"/>
 
         </LinearLayout>
         
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2">
+            android:layout_weight="1.5">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="3" >
+                    android:weightSum="3" 
+                    android:background="@drawable/setbg">
                     
                     <TextView
-	                    android:id="@+id/textView4"
+	                    android:id="@+id/setnum"
 	                    android:layout_width="match_parent"
 	                    android:layout_height="0dp"
-	                    android:background="#ffffff"
-	                    android:textColor="#000000"
+	                    android:textColor="#ffffff"
 	                    android:layout_weight="2"
 	                    android:gravity="center"
 	                    android:textSize="35sp"
@@ -61,12 +63,12 @@
 	                    android:id="@+id/textView5"
 	                    android:layout_width="match_parent"
 	                    android:layout_height="0dp"
-	                    android:background="#ffffff"
-	                    android:textColor="#000000"
+	                    android:textColor="#ffffff"
 	                    android:layout_weight="1"
 	                    android:gravity="center"
 	                    android:text="Set"
-	                    android:textSize="25sp"/>
+	                    android:layout_marginBottom="5dp"
+	                    android:textSize="20sp"/>
                     
                     
                 </LinearLayout>
@@ -76,10 +78,10 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/t2setscore"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="0"
@@ -87,7 +89,8 @@
                 android:gravity="center"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:background="#ff0000"/>
+                android:textColor="#ffffff"
+                android:background="@drawable/matchpointbg"/>
 
         </LinearLayout>
 
@@ -96,57 +99,104 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3" >
+        android:layout_weight="3" 
+        android:weightSum="13">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:weightSum="4">
-			
-           	<Space
-           	    android:layout_width="0dp"
-           	    android:layout_height="match_parent"
-           	    android:layout_weight="1"/>
+            android:orientation="vertical"
+            android:layout_weight="3" >
 
             <TextView
-                android:id="@+id/textView1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:id="@+id/vteam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:gravity="center"
+                android:background="@drawable/teamnamebg"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <TextView
+                android:id="@+id/t1score"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="2"
                 android:adjustViewBounds="true"
-                android:background="#ffffff"
+                android:background="@drawable/scoreboard"
                 android:gravity="center"
                 android:text="00"
-                android:textColor="#000000"
-                android:textSize="70sp"
-                android:layout_marginTop="10dp"/>
+                android:textColor="#ffff00"
+                android:textSize="100sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/timeoutbtn"/>
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:weightSum="4">
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
+            android:orientation="vertical"
+            android:layout_weight="3"  >
+            
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:id="@+id/vteam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 2"
+                android:gravity="center"
+                android:background="@drawable/teamnamebg"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <TextView
+                android:id="@+id/t2score"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="2"
                 android:adjustViewBounds="true"
-                android:background="#ffffff"
+                android:background="@drawable/scoreboard"
                 android:gravity="center"
                 android:text="00"
-                android:textColor="#000000"
-                android:textSize="70sp"
-                android:layout_marginTop="10dp"/>
+                android:textColor="#d3d3d3"
+                android:textSize="100sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
             
         </LinearLayout>
 
@@ -156,29 +206,55 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:weightSum="4" >
+        android:weightSum="5" >
 		
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/attackbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:text="+" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/attackbutton"/>
         
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/blockbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:textSize="20sp"
-            android:text="-" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/blockbutton" />
+        
+        <Button
+            android:id="@+id/acebtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/acebutton" />
+        
+        <Button
+            android:id="@+id/errbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/opperrorbutton" />
+        
+        <Button
+            android:id="@+id/incdecbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/increment"/>
 
     </LinearLayout>
 

@@ -28,12 +28,12 @@
             android:name=".BasketballGame"
             android:screenOrientation="landscape" >
         </activity>
-        <activity android:name=".SetupVolleyball"  
+        <activity android:name="com.netcentric.volleyball.SetupVolleyball"  
             android:label="Set Up" 
             android:parentActivityName="com.netcentric.scoretracker.MainActivity">
         </activity>
         <activity
-            android:name=".VolleyballGame_Simple"
+            android:name="com.netcentric.volleyball.VolleyballGame"
             android:screenOrientation="landscape">
         </activity>
     </application>
