@@ -26,16 +26,23 @@
             android:name=".BasketballGame"
             android:screenOrientation="landscape" >
         </activity>
-        <activity android:name="com.netcentric.volleyball.SetupVolleyball"  
-            android:label="Set Up" 
-            android:parentActivityName="com.netcentric.scoretracker.MainActivity">
+        <activity
+            android:name="com.netcentric.volleyball.SetupVolleyball"
+            android:label="Set Up"
+            android:parentActivityName=".MainActivity" >
         </activity>
-        <activity android:name="com.netcentric.scoretracker.SetupBasketball"  
-            android:label="Set Up" 
-            android:parentActivityName="com.netcentric.scoretracker.MainActivity">
+        <activity
+            android:name=".SetupBasketball"
+            android:label="Set Up"
+            android:parentActivityName=".MainActivity" >
         </activity>
         <activity
             android:name="com.netcentric.volleyball.VolleyballGame"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".GameOver"
+            android:label="@string/title_activity_game_over"
             android:screenOrientation="landscape">
         </activity>
     </application>

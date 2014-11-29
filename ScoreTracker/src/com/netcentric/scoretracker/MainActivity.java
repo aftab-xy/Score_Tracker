@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 	        new Sport(R.drawable.basketball_logo, "Basketball"),
 	        new Sport(R.drawable.volleyball_logo, "Volleyball"),
 	        new Sport(R.drawable.tennis_logo, "Tennis"),
-	        new Sport(R.drawable.pingpong_logo, "Ping Pong")
+	       // new Sport(R.drawable.pingpong_logo, "Ping Pong")
 	        };
 	    listitem = (ListView)findViewById(R.id.listitem);
 	    SportsAdapter adapter = new SportsAdapter(this, R.layout.list_sports,

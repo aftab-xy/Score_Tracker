@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#336699"
+    android:orientation="vertical"
+    android:padding="5dip" >
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#336699"
+	    android:orientation="vertical"
+	    android:padding="5dip" >
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/set"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="Set X"
+	            android:textColor="#ffffff"
+	            android:textSize="35sp"
+	            android:textStyle="bold" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:weightSum="3">
+	
+	        <TableLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TableRow
+	                android:id="@+id/tableRow1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:weightSum="3" >
+					
+	                <TextView
+	                    android:id="@+id/sett1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Team 1"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1" 
+	                    android:gravity="center"
+	                    android:layout_gravity="center"
+	                    android:textStyle="bold"/>
+	                
+	                <Space
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="1" />
+	
+	                
+	
+	                <TextView
+	                    android:id="@+id/sett2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Team 2"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    android:layout_gravity="center"
+	                    android:textStyle="bold" />
+	
+	            </TableRow>
+	
+	            <TableRow
+	                android:id="@+id/tableRow2"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:weightSum="3" >
+	
+	                <TextView
+	                    android:id="@+id/t1attack"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Attacks"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/t2attack"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    android:textStyle="bold"  />
+	
+	            </TableRow>
+	
+	            <TableRow
+	                android:id="@+id/tableRow3"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:weightSum="3" >
+	
+	                <TextView
+	                    android:id="@+id/t1block"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Blocks"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/t2block"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	            </TableRow>
+	            <TableRow
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:weightSum="3" >
+	
+	                <TextView
+	                    android:id="@+id/t1ace"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Aces"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/t2ace"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	            </TableRow>
+	            <TableRow
+	                android:id="@+id/tableRow4"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:weightSum="3" >
+	
+	                <TextView
+	                    android:id="@+id/t1err"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Opp Error"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/t2err"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	            </TableRow>
+	            <TableRow
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:weightSum="3" >
+	
+	                <TextView
+	                    android:id="@+id/t1sc"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Score"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/t2sc"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="00"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:layout_weight="1"
+	                    android:gravity="center"  />
+	
+	            </TableRow>
+	        </TableLayout>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <Button
+	            android:id="@+id/proceed"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Change Court" />
+	
+	    </LinearLayout>
+	
+	</LinearLayout>
+</RelativeLayout>

@@ -3,17 +3,21 @@ package com.netcentric.volleyball;
 import java.util.ArrayList;
 
 public class VolleyballTeam {
+	String teamname;
 	ArrayList<VolleyballSet> sets;
 	int setscore;
+	
 	
 	public VolleyballTeam(){
 		setscore = 0;
 		sets = new ArrayList<VolleyballSet>();
+		teamname = null;
 	}
 	
-	public VolleyballTeam(VolleyballSet set){
+	public VolleyballTeam(String teamname){
 		setscore = 0;
-		sets.add(set);
+		sets = new ArrayList<VolleyballSet>();
+		this.teamname = teamname;
 	}
 
 	public ArrayList<VolleyballSet> getSets() {
@@ -31,5 +35,12 @@ public class VolleyballTeam {
 	public void setSetscore(int setscore) {
 		this.setscore = setscore;
 	}
+	
+	public String getTeamname() {
+		return teamname;
+	}
 
+	public void setTeamname(String teamname) {
+		this.teamname = teamname;
+	}
 }
