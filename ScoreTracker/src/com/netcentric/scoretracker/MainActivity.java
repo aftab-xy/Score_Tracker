@@ -18,7 +18,7 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.content.Context;
 import android.content.Intent;
-
+import android.os.CountDownTimer;
 
 
 public class MainActivity extends Activity {
@@ -62,7 +62,8 @@ public class MainActivity extends Activity {
               if(string1.equals("Basketball")){
             	  Intent intent = new Intent(context, SetupBasketball.class);
             	  startActivity(intent); 
-              }else if(string1.equals("Volleyball")){
+              }
+              else if(string1.equals("Volleyball")){
             	  Intent intent = new Intent(context, SetupVolleyball.class);
             	  startActivity(intent); 
               }

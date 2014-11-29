@@ -22,13 +22,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SetupBasketball" >
-        </activity>
         <activity
             android:name=".BasketballGame"
             android:screenOrientation="landscape" >
         </activity>
         <activity android:name="com.netcentric.volleyball.SetupVolleyball"  
+            android:label="Set Up" 
+            android:parentActivityName="com.netcentric.scoretracker.MainActivity">
+        </activity>
+        <activity android:name="com.netcentric.scoretracker.SetupBasketball"  
             android:label="Set Up" 
             android:parentActivityName="com.netcentric.scoretracker.MainActivity">
         </activity>

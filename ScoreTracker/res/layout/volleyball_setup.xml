@@ -76,30 +76,32 @@
 	            android:layout_height="wrap_content"
 	            android:text="Number of Sets:"
 	            android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
+
 	        <RadioGroup
 	            android:id="@+id/numset"
-	    		android:layout_width="fill_parent"
-	    		android:layout_height="wrap_content"
-	    		android:orientation="vertical">
-	    		
-	    		<RadioButton android:id="@+id/set5"
-	        		android:layout_width="wrap_content"
-	        		android:layout_height="wrap_content"
-	        		android:text="5"
-	        		android:checked="true"/>
-	    		
-	    		<RadioButton android:id="@+id/set3"
-	        		android:layout_width="wrap_content"
-	        		android:layout_height="wrap_content"
-	        		android:text="3"/>
-	    		
-	    		<RadioButton android:id="@+id/set1"
-	        		android:layout_width="wrap_content"
-	        		android:layout_height="wrap_content"
-	        		android:text="1"/>
-			</RadioGroup>
-	        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <RadioButton
+	                android:id="@+id/set5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:checked="true"
+	                android:text="5" />
+
+	            <RadioButton
+	                android:id="@+id/set3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="3" />
+
+	            <RadioButton
+	                android:id="@+id/set1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="1" />
+	        </RadioGroup>
 	
 	    </TableRow>
 	
